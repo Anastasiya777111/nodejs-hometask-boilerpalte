@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "sh -c 'env REPO_URL=$0 npx mocha tests/**/*.spec.js -R JSON --exit'",
-    "test-local": "./node_modules/.bin/mocha tests/**/*.spec.js --exit -R JSON",
+    "test-local": "mocha tests/**/*.spec.js --exit -R JSON",
     "start": "node index.js",
     "build-front": "cd client | ls",
     "feedback": "node ./feedback/index.js",
